@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a1,b1,a2,b2;
+    float c,d;
+    scanf("%d", &a1);
+    scanf("%d", &b1);
+    scanf("%d", &a2);
+    scanf("%d", &b2);
+    c = (a1 + a2) / 2.0;
+    d = (b1 + b2) / 2.0;
+    printf("Binoy's house is located at (%.1f,%.1f)\n",c,d);
+
+    return 0;
+}
