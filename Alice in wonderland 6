@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a;
+    scanf("%d",&a);
+    int tens=a/10;
+    int unit=a%10;
+    int sum= tens+unit;
+    printf("Bird said:%d\n",a);
+    printf("Alice must go in path-%d",sum);
+    return 0;
+}
