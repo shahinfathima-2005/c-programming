@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int a,b,c;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    if(a>b && a>c)
+        printf("a is largest then b and c");
+    else if(b>a && b>c)
+        printf("b is largest then a and c");
+    else
+        printf("c is largest then a and b");
+    return 0;
+}
