@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int num1, num2;
+    char a; 
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    scanf(" %c", &a);  
+    switch (a)
+    {
+        case '+':
+            printf("Addition of two number is %.1f\n", (float)(num1 + num2));
+            break;
+        case '-':
+            printf("Subtraction of two number is %.1f\n", (float)(num1 - num2));
+            break;
+        case '*':
+            printf("Multiplication of two number is %.1f\n", (float)(num1 * num2));
+            break;
+        case '/':
+            if (num2==0)
+            {
+                printf("Division by zero error\n");
+            } else
+            {
+                printf("Division of two number is %.1f\n", (float)num1 / num2);
+            }
+            break;
+        case '%':
+            if (num2==0)
+            {
+                printf("Modulo by zero error\n");
+            } else 
+            {
+                printf("Modulo of two number is %.1f", (float)(num1 % num2));
+            }
+            break;
+        default:
+            printf("Invalid Input");
+    }
+    return 0;
+}
