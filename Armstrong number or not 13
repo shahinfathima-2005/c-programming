@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+     int n,original,sum=0,i;  
+    scanf("%d",&n);
+    if (n<100 || n>999)
+    {
+        printf("No\n");
+        return 0;
+    }
+    original=n;
+    while (n>0)
+    {
+        i = n%10;
+        sum += i*i*i;
+        n /= 10;
+    }
+    if (sum == original)
+        printf("Yes");
+    else
+        printf("No");         
+    return 0;
+}
